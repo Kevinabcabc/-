@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home/home",
+    "pages/user/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#424242",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f1f1f1"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#424242",
+    "list": [
+      {
+        "pagePath": "pages/home/home/home",
+        "text":"首页",
+        "iconPath":"static/home-item-n.png",
+        "selectedIconPath":"static/home-item-a.png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "iconPath": "static/mine-item-n.png",
+        "selectedIconPath":"static/mine-item-a.png"
+      }
+    ]
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc": "千锋学院想获得您当前的位置"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
