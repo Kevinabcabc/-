@@ -1,0 +1,77 @@
+<!--pages/course/course-detail/course-detail.wxml-->
+<view class="course-detail">
+  <image class="meta" src="/static/logo.png">
+  </image>
+
+  <view class="course-title">
+    <text class="left"> 围棋入门班</text>
+    <text>浏览：{{visitor}}</text>
+  </view>
+
+  <text class="summer">暑期班</text>
+
+
+  <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>课程安排</text> 
+    </view>
+    <view bindtap="pushAction" class="more" >
+      剩余名额： <text>{{rest}}</text> 
+    </view>
+  </view>
+
+
+  <view class="time">
+    <view>
+      <text>{{stime}}</text> -- <text>{{etime}}</text>
+    </view>
+
+    <view>查看授课日历</view>
+  </view>
+  
+    <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>授课教师</text> 
+    </view>
+    <view bindtap="pushAction" class="more" >
+    </view>
+  </view>
+
+  <view class="teachers">
+          <teacher-info wx:for="{{teacher}}" wx:key="index" imgurl="{{item.img}}" type="{{item.course}}" firstname="{{item.name}}" id="{{item.id}}"/>
+  </view>
+
+
+    <view class="title-more">
+      <view class="title">
+        <view class="long"></view>
+        <text>课程简介</text> 
+      </view>
+      <view bindtap="pushAction" class="more" >
+      </view>
+    </view>
+
+
+    <view class="content">
+      {{intro}}
+      {{intro}}
+      {{intro}}
+      {{intro}}
+      {{intro}}
+      {{intro}}
+    </view>
+
+  <block wx:if="{{purchased != 'true'}}">
+  
+    <view class="bottomFix">
+        <image src="/static/kefu.svg"></image>
+        <view bindtap="pushAction">立即报名</view>
+    </view>
+
+    <view class="whiteSpace"></view>
+  
+  </block>
+
+</view>

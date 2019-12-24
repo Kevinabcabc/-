@@ -1,0 +1,34 @@
+<!--pages/course/course-list/course-list.wxml-->
+<view class="course-list">
+  <view class="title">
+    --{{title}}--
+  </view>
+  <block wx:if="{{img.type==='img'}}">
+      <image class="img" src="{{img.url}}"></image>
+  </block>
+  <block wx:else>
+      <video class="img" src="{{img.url}}"></video>
+  </block>
+  <view class="content">
+    {{intro}}
+    {{intro}}
+    {{intro}}
+    {{intro}}
+    {{intro}}
+    {{intro}}
+    {{intro}}
+  </view>
+
+  <title-more title="课程列表" isMore="{{false}}"/>
+  <view class="course">
+  <course-item wx:for="{{courseList}}" wx:key="index" img="{{item.img}}" type="{{item.type}}" title="{{item.name}}" content="{{item.info}}" time="{{item.time}}"/>
+  
+  </view>
+
+
+ <title-more title="教师授课列表" isMore="{{true}}" moreUrl="/pages/teachers/teachers-list/teacher-list"/>
+  <view class="teachers">
+  <teacher-info wx:for="{{teacher}}" wx:key="index" imgurl="{{item.img}}" firstname="{{item.name}}"/>
+  </view>
+
+</view>

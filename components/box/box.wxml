@@ -1,0 +1,6 @@
+<!--components/box/box.wxml-->
+<view class="box">
+box    +++{{info}}>>>{{title}}
+  <button  data-info="ennenenenen" bindtap="countAction">{{value}}</button>
+  <boxson count="{{value}}" bind:changeNum="changeVal"/>
+</view>

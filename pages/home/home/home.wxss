@@ -1,1 +1,89 @@
 /* pages/home/home/home.wxss */
+.banner-wrap{
+  position: relative;
+}
+.banner{
+  width: 100%;
+  height: 390rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.banner .banner-img{
+  height: 100%;
+  width: 100%；
+}
+.banner-wrap .banner-dot {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 36rpx;
+}
+.banner-wrap .banner-dot .banner-dot-item{
+  height: 20rpx;
+  width: 40rpx;
+  background: #ddd;
+  border-radius: 15rpx;
+  margin: 0 10rpx;
+}
+.banner-wrap .banner-dot .active{
+  background: rgb(205, 175, 143);
+  width: 70rpx;
+}
+
+.category{
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.category .category-item{
+  width: 25%;
+  height: 150rpx;
+  
+}
+.category .category-item .category-img{
+  height: 70%;
+  width: 60%;
+  margin: 0 auto;
+}
+.category .category-item .category-title{
+  text-align: center;
+  margin-top: 5rpx;
+}
+
+.college{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.honor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.callus{
+  width: 100%;
+  height: 400rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.callus image{
+  width: 100%;
+  height: 100%;
+}
+
+.callus .college-name{
+  font-weight: bold;
+  margin: 20rpx 0;
+}
+
+.callus .callus-com{
+  display: flex;
+  justify-content: space-between;
+}

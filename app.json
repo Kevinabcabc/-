@@ -1,7 +1,25 @@
 {
   "pages": [
     "pages/home/home/home",
-    "pages/user/user/user"
+    "pages/user/user/user",
+    "pages/user/coment/comment",
+    "pages/user/material/material",
+    "pages/user/order-detail/order-detail",
+    "pages/user/order-list/order-list",
+    "pages/user/purchased/purchased",
+    "pages/college/college-detail/college-detail",
+    "pages/college/college-list/college-list",
+    "pages/college/map-navigator/map-navigator",
+    "pages/course/course-detail/course-detail",
+    "pages/course/course-list/course-list",
+    "pages/course/calendar/calendar",
+    "pages/teachers/teachers-detail/teacher-detail",
+    "pages/teachers/teachers-list/teacher-list",
+    "pages/information/information-detail/information-list",
+    "pages/information/information-list/information-list",
+    "pages/information/video-list/video-list",
+    "pages/college/honer-list/honer-list",
+    "pages/college/honor-detail/honor-detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -17,19 +35,19 @@
     "list": [
       {
         "pagePath": "pages/home/home/home",
-        "text":"首页",
-        "iconPath":"static/home-item-n.png",
-        "selectedIconPath":"static/home-item-a.png"
+        "text": "首页",
+        "iconPath": "static/home-item-n.png",
+        "selectedIconPath": "static/home-item-a.png"
       },
       {
         "pagePath": "pages/user/user/user",
         "text": "我的",
         "iconPath": "static/mine-item-n.png",
-        "selectedIconPath":"static/mine-item-a.png"
+        "selectedIconPath": "static/mine-item-a.png"
       }
     ]
   },
-  "permission":{
+  "permission": {
     "scope.userLocation": {
       "desc": "千锋学院想获得您当前的位置"
     }

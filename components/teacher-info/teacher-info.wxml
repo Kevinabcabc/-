@@ -1,0 +1,6 @@
+<!--components/teacher-info/teacher-info.wxml-->
+<view class="teacher-info" bindtap="tapAction">
+  <image class="teacher-info-img" src="{{imgurl}}"></image>
+
+  <view class="teacher-info-name">{{firstname}}老师  {{type?"(" + type + ")" : ""}} </view>
+</view>

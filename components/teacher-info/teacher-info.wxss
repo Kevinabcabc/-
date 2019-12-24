@@ -1,0 +1,13 @@
+/* components/teacher-info/teacher-info.wxss */
+.teacher-info{
+  width: 355rpx;
+  height: 240rpx;
+  
+}
+.teacher-info .teacher-info-img{
+  width: 100%;
+  height: 80%;
+}
+.teacher-info .teacher-info-name{
+  text-align: center;
+}

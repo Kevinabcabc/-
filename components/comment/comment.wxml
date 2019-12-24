@@ -1,0 +1,19 @@
+<!--components/comment/comment.wxml-->
+<view class="comment">
+  <view class="left">
+    <image src="{{img}}"></image>
+    <view>
+      <text>报课学生</text>
+      <view class="time">{{time}}</view>
+      <view>{{content}}</view>
+    </view>
+  </view>
+  <view class="right">
+  <block wx:if="{{good===false}}">
+    <image bindtap="goodAction" src="/static/good.png"></image>
+  </block>
+  <block wx:else>
+    <image bindtap="goodAction" src="/static/good-y.png"></image>
+  </block>
+  </view>
+</view>

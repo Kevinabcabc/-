@@ -1,0 +1,6 @@
+/* components/box/box.wxss */
+.box{
+  height: 500rpx;
+  width: 400rpx;
+  background: red;
+}

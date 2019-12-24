@@ -1,0 +1,5 @@
+<!--pages/user/purchased/purchased.wxml-->
+<view class="purchased">
+
+  <course-item wx:for="{{courseList}}" wx:key="index" img="{{item.img}}" type="{{item.type}}" title="{{item.name}}" content="{{item.info}}" purchased="{{true}}" time="{{item.time}}"/>
+</view>

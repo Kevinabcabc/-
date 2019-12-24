@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "课程列表",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "course-item": "/components/course-item/course-item"
+  }
+}

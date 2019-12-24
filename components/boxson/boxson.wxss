@@ -1,0 +1,6 @@
+/* components/boxson/boxson.wxss */
+.boxson{
+  height: 300rpx;
+  width: 300rpx;
+  background: yellow
+}

@@ -1,0 +1,19 @@
+/* pages/information/video-list/video-list.wxss */
+.video-list video{
+  width: 100%;
+  
+} 
+
+.video-list .video-item{
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.video-list .video-item video{
+  height: 400rpx;
+  width: 100%;
+}
+.video-list .video-item  .title{
+  font-weight: bold;
+  font-size: 35rpx;
+  line-height: 60rpx;
+}

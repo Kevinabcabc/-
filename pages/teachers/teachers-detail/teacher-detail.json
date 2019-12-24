@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "教师介绍",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "gold-title": "/components/goldtitle/goldtitle",
+    "honor-item": "/components/honor-item/honor-item",
+    "course-item": "/components/course-item/course-item",
+    "title-more": "/components/title-more/title-more",
+    "comment": "/components/comment/comment"
+  }
+}

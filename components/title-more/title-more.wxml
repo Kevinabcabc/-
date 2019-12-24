@@ -1,0 +1,14 @@
+<!--components/title-more/title-more.wxml-->
+<view class="title-more">
+  <view class="title">
+    <view class="long"></view>
+     <text>{{title}}</text> 
+  </view>
+  <block wx:if="{{isMore===true}}">
+   <view bindtap="pushAction" class="more" >
+     更多
+  </view></block>
+  <block wx:else>
+  <view></view></block>
+ 
+</view>

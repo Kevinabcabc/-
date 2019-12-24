@@ -1,0 +1,43 @@
+/* pages/teachers/teachers-list/teacher-list.wxss */
+.teacher-list{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+
+.teacher-list  .post{
+  width: 100%;
+  height: 60rpx;
+  background: rgb(205, 175, 143);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+}
+.teacher-list  .post image{
+  height: 40rpx;
+  width: 40rpx;
+  margin: 0 20rpx;
+
+}
+.teacher-list  .post  text{
+  color: white;
+  font-size: 26rpx;
+}
+.teacher-list  .title{
+  font-size: 34rpx;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70rpx;
+}
+.teacher-list .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.teacher-list .nomore{
+  text-align: center;
+  line-height: 60rpx;
+}

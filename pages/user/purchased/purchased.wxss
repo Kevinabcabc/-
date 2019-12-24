@@ -1,0 +1,4 @@
+/* pages/user/purchased/purchased.wxss */
+.purchased{
+  padding: 20rpx;
+}

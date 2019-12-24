@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "学院资讯",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "college-news": "/components/college-news/college-news",
+    "loadmore": "/components/loadmore/loadmore"
+  }
+}

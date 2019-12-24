@@ -1,0 +1,10 @@
+<!--pages/user/order-list/order-list.wxml-->
+<view class="order-list">
+    <view class="banner">
+      <view class="{{status===0?'active':''}}" data-status="{{0}}" bindtap="statusAction">待支付订单</view>
+      <view class="{{status===1?'active':''}}"  data-status="{{1}}" bindtap="statusAction">全部订单</view>
+    </view>
+    
+    <order-item wx:for="{{status===0?unpay:payed}}" wx:key="index" order="{{item}}"/>
+
+</view>

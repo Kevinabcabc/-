@@ -1,0 +1,33 @@
+/* pages/course/course-list/course-list.wxss */
+.course-list .title{
+  font-size: 35rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(205, 175, 143)
+
+}
+
+.course-list .img{
+  width: 700rpx;
+  height: 400rpx;
+  margin: 10rpx 25rpx;
+}
+
+.course-list .content{
+  font-size: 30rpx;
+  padding: 0 30rpx;
+  color: #666;
+}
+
+.course-list .course{
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.course-list .teachers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

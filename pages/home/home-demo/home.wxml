@@ -1,0 +1,120 @@
+<!--pages/home/home/home.wxml-->
+<block wx:if="{{!isLoad}}">
+  <view wx:for="{{mockData}}" wx:key="index" 
+    style="width: {{item.width}}rpx; height: {{item.height}}rpx; background: #ddd; margin: 20rpx;"></view>
+</block>
+
+<block wx:else>
+  <view class="banner-wrap">
+      <!-- swiper-item -->
+  <swiper class="banner" autoplay="{{true}}" interval="{{3000}}" circular="{{true}}" bindchange="bannerChangeAction">
+    <swiper-item wx:for="{{banner}}" wx:key="index">
+      <image class="banner-img"  src="{{item.bannerUrl}}"></image>
+    </swiper-item>
+  </swiper>
+  <!-- indicator -->
+  <view class="indicator">
+    <view class="{{'indicator-item'+(index===bannerIndex?' active':'')}}" wx:for="{{banner}}" wx:key="index">
+    </view>
+  </view>
+  </view>
+
+<!-- 分类 -->
+<view class="category-wrap">
+  <view class="category-item" wx:for="{{category}}"wx:key="index">
+    <image class="category-img" src="{{item.picUrl}}"></image>
+    <view class="category-title">{{item.title}}</view>
+  </view>
+</view>
+
+
+<!-- 教师风采 -->
+<view class="panel-header">
+  <view class="panel-title">教师风采</view>
+  <view class="more">更多</view>
+</view>
+
+<view class="teacher-wrap">
+  <view class="teacher-item" wx:for="{{teachers}}" wx:key="index">
+    <image class="teacher-image" src="{{item.image}}"></image>
+    <view class="teacher-name">{{item.firstname}}老师 ({{item.type}})</view>
+  </view>
+</view>
+
+<!-- 学院资讯 -->
+<view class="panel-header">
+  <view class="panel-title">学院资讯</view>
+  <view class="more">更多</view>
+</view>
+
+<view class="infomation-wrap">
+  <view class="infomation-item" wx:for="{{infomation}}" wx:key="index">
+    <image class="info-image" src="{{item.image}}"></image>
+    <view class="info-content">
+      <view class="info-title">{{item.title}}</view>
+      <view class="info-desc">{{item.desc}}</view>
+      <view class="info-time">{{item.time}}</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 学院荣誉 -->
+<view class="panel-header">
+  <view class="panel-title">学院荣誉</view>
+  <view class="more">更多</view>
+</view>
+
+<view class="honor-wrap">
+  <view class="honor-item" wx:for="{{honor}}" wx:key="index">
+    <view class="honor-image-wrap">
+      <image class="honor-image" src="{{item.image}}"></image>
+      <view class="honor-info">{{item.type}}{{item.title}}</view>
+    </view>
+    <view class="honor-name">{{item.name}} ({{item.type}})</view>
+  </view>
+</view>
+
+<!-- 联系我们 -->
+<view class="panel-header">
+  <view class="panel-title">联系我们</view>
+</view>
+
+<view class="map-wrap">
+  <!-- <map class="map" 
+    longitude="{{connect.info.longitude}}" 
+    latitude="{{connect.info.latitude}}" 
+    scale="14"
+    enable-scroll="{{true}}"
+    enable-zoom="{{true}}"
+    markers="{{[{...connect.info}]}}"
+    bindpoitap="testAction"
+    ></map> -->
+    <image class="map" src="/static/map.png" mode="widthFix"></image>
+  <view class="college-title">千锋学院</view>
+  <view class="college-item">
+    <view class="college-item-title">地址:</view>
+    <view class="college-item-content">
+      <view class="college-item-value">{{connect.address}}</view>
+    </view>
+  </view>
+  <view class="college-item">
+    <view class="college-item-title">电话:</view>
+    <view class="college-item-content">
+      <view class="ollege-item-value" wx:for="{{connect.tel}}" wx:key="index">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="college-item">
+    <view class="college-item-title">手机:</view>
+    <view class="college-item-content">
+      <view class="college-item-value" wx:for="{{connect.phone}}" wx:key="index">
+        {{item.name}}主任:{{item.phone}}
+      </view>
+    </view>
+  </view>
+</view>
+
+
+</block>

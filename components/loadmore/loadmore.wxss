@@ -1,0 +1,5 @@
+/* components/loadmore/loadmore.wxss */
+.loading{
+  text-align: center;
+  line-height: 100rpx;
+}

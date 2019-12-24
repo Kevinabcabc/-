@@ -1,0 +1,37 @@
+<!--pages/college/college-detail/college-detail.wxml-->
+<view class="college-detail">
+
+  <view class="title">{{title}}</view>
+  <view class="time">{{time}}</view>
+  <video class="image" src="{{image}}"></video>
+
+  <view class="content">
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+  </view>
+
+  <title-more title="留言评论" hasmore="{{false}}"/>
+
+
+  <view class="comments">
+
+
+  
+    <comment wx:for="{{comment}}" wx:key="index" content="{{item.content}}" img="{{item.img}}" time="{{item.time}}"/>
+    <view class="nomore">----没有更多了----</view>
+  </view>
+
+
+  <view class="add-comment">
+    <input placeholder="留个言，上个墙" bindblur="blurAction"></input>
+    <view bindtap="sendAction">发送</view>
+  </view>
+
+</view>

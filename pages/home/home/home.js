@@ -1,17 +1,17 @@
 import API from '../../../request/api.js'
 import Http from '../../../request/index.js'
-
 // pages/home/home/home.js
-
 Page({
+
   /**
    * 页面的初始数据
    */
+  
   data: {
-    isLoad:false,
-    bannerIndex:0,
-    banner:[],
-    category:[],
+    isLoad: false,
+    bannerIndex: 0,
+    banner: [],
+    category: [],
     teachers: [],
     infomation: [],
     honor: [],
@@ -23,14 +23,86 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.mockData();
+    this.requestData();
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  mockData() {
+    let arr = new Array(20).fill(undefined).map(() => {
+      return {
+        width: 200 + parseInt(Math.random() * 500),
+        height: 50 + parseInt(Math.random() * 40)
+      };
+    });
+    // console.log(arr);
+    this.setData({ mockData: arr });
+  },
 
+  requestData() {
+    wx.showLoading({
+      title: 'waiting',
+      mask: true
+    });
+
+    wx.showNavigationBarLoading();
+
+    this.http = new Http();
+    this.http.get(API.HOME_API)
+      .then(({ data }) => {
+        this.setData({
+          isLoad: true,
+          banner: data.banner,
+          category: data.category,
+          teachers: data.teacher,
+          infomation: data.infomation,
+          honor: data.honor,
+          connect: data.connect
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      })
+      .finally(() => {
+        console.log(this.data)
+        wx.hideLoading();
+        wx.hideNavigationBarLoading();
+      })
+  },
+  onReady: function () {
+    console.log(this.data)
+  },
+
+  bannerChangeAction(ev){
+    // console.log(ev.detail.current);
+    this.setData({
+      bannerIndex: ev.detail.current
+    });
+  },
+
+
+  categoryAction(ev){
+    let url = '';
+    switch (ev.currentTarget.dataset.type) {
+      case 1:
+        url = '/pages/course/course-list/course-list?title=' + ev.currentTarget.dataset.title;
+        break;
+      case 2:
+        url = '/pages/teachers/teachers-list/teacher-list';
+        break;
+      case 3:
+        url = '/pages/college/college-list/college-list';
+        break;
+      case 4:
+        url = '/pages/information/video-list/video-list';
+        break;
+    }
+    console.log(url);
+    wx.navigateTo({
+      url: url,
+    });
   },
 
   /**

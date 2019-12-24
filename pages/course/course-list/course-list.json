@@ -1,0 +1,8 @@
+{
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+      "title-more": "/components/title-more/title-more",
+      "teacher-info": "/components/teacher-info/teacher-info",
+      "course-item": "/components/course-item/course-item"
+    }
+}

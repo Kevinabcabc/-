@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "学院荣誉",
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+      "teacher-info": "/components/teacher-info/teacher-info"
+    }
+}

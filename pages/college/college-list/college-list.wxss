@@ -1,0 +1,4 @@
+/* pages/college/college-list/college-list.wxss */
+.college-list{
+  padding-top: 20rpx;
+}

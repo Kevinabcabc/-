@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+    "navigationBarTitleText": "首页",
+    "enablePullDownRefresh": false,
+    "usingComponents": {
+      "title-more": "/components/title-more/title-more",
+      "teacher-info": "/components/teacher-info/teacher-info",
+      "college-news": "/components/college-news/college-news",
+      "honor-item": "/components/honor-item/honor-item"
+    }
 }

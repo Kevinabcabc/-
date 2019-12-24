@@ -1,2 +1,80 @@
 <!--pages/user/user/user.wxml-->
-<text>pages/user/user/user.wxml</text>
+<view class="user">
+  <view class="header">
+        <view class="header-content">
+          <image src="{{avatarUrl}}"></image>
+          <view class="right">{{nickName}}</view>
+        </view>
+  
+  </view>
+  
+  <view class="banner">
+      <view bindtap="pushAction" data-push="/pages/user/order-list/order-list">
+        <view>8</view>
+        <view>订单</view>
+      </view>
+
+      <view bindtap="pushAction" data-push="/pages/user/purchased/purchased">
+        <view>96</view>
+        <view>课程</view>
+      </view>
+
+      <view bindtap="pushAction" data-push="/pages/user/coment/comment">
+        <view>48</view>
+        <view>点评</view>
+      </view>
+  </view>
+
+
+  <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>个人资料</text> 
+    </view>
+
+    <view bindtap="pushAction" class="more"  data-push="{{ '/pages/user/material/material'+'?nickName=' + nickName }}">
+      查看
+    </view>
+  
+  </view>
+
+
+    <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>联系客服</text> 
+    </view>
+    
+    <view bindtap="pushAction" class="more" >
+      8888888
+    </view>
+  
+  </view>
+
+
+
+    <view class="title-more">
+      <view class="title">
+        <view class="long"></view>
+        <text>关于学院</text> 
+      </view>
+    
+    <view bindtap="userInfoAction" class="more" >
+        某某学院
+    </view>
+  </view>
+
+  <view class="title-more">
+      <view class="title">
+        <view class="long"></view>
+        <text>设置</text> 
+      </view>
+    
+    <view bindtap="pushAction" class="more" >
+        
+      </view>
+  </view>
+
+
+
+</view>

@@ -4,15 +4,24 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
@@ -33,13 +42,133 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/teachers/teachers-list/teacher-list",
+					"pathName": "pages/teachers/teachers-list/teacher-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "教师详情",
+					"pathName": "pages/teachers/teachers-detail/teacher-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "课程详情",
+					"pathName": "pages/course/course-detail/course-detail",
+					"query": "title=\"国学\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/user/order-detail/order-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/college/college-list/college-list",
+					"pathName": "pages/college/college-list/college-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学院详情",
+					"pathName": "pages/college/college-detail/college-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频详情",
+					"pathName": "pages/information/video-list/video-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "荣誉列表",
+					"pathName": "pages/college/honer-list/honer-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "荣誉详情",
+					"pathName": "pages/college/honor-detail/honor-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "课程详情",
+					"pathName": "pages/course/course-list/course-list",
+					"query": "title=国学",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/user/user",
+					"query": "title=国学",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "个人资料",
+					"pathName": "pages/user/material/material",
+					"query": "nickName=\"kevin\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/user/order-list/order-list",
+					"query": "nickName=\"kevin\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程列表",
+					"pathName": "pages/user/purchased/purchased",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/user/coment/comment",
+					"scene": null
+				}
+			]
 		}
 	}
 }

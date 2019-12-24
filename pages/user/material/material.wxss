@@ -1,0 +1,29 @@
+/* pages/user/material/material.wxss */
+.title-more{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-more .title{
+  display: flex;
+}
+.title-more .title .long{
+  height: 40rpx;
+  width: 10rpx;
+  background: rgb(205, 175, 143);
+  margin-right: 15rpx;
+}
+.title-more .title  text{
+  font-weight: bold;
+}
+
+.material .infoItem{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20rpx;
+}

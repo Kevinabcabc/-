@@ -1,0 +1,11 @@
+<!--components/loadmore/loadmore.wxml-->
+<block wx:if="{{hasmore===true}}">
+<view class="loading">
+  ---- 正在火速加载中 ----
+</view>
+</block>
+<block wx:else>
+<view class="loading">
+ ----  人家是有底线的 ----
+</view>
+</block>

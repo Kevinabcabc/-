@@ -1,0 +1,2 @@
+<!--components/goldtitle/goldtitle.wxml-->
+<view class="title">-- {{title}} --</view>

@@ -1,0 +1,30 @@
+<!--pages/user/material/material.wxml-->
+<view class="material">
+    <view class="title-more">
+      <view class="title">
+        <view class="long"></view>
+        <text>个人信息</text> 
+      </view>
+    
+    <view bindtap="userInfoAction" class="more" >
+       修改资料
+    </view>
+  </view>
+
+
+  <view class="infoItem">
+    <view>昵称</view>
+    <view>{{nickName}}</view>
+  </view>
+
+  <view class="infoItem">
+    <view>电话</view>
+    <view>467984651687</view>
+  </view>
+
+  <view class="infoItem">
+    <view>备用电话</view>
+    <view>467984651687</view>
+  </view>
+
+</view>

@@ -1,25 +1,70 @@
+import API from '../../../request/api.js'
 // pages/user/user/user.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-
+  data:{
+    nickName:String,
+    avatarUrl:String
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    console.log(app.globalData.userInfo);
+    wx.login({
+      success(res){
+        // console.log(res);
+        wx.request({
+          url: API.LOGIN_API,
+          data:{
+            code:res.code
+          },
+          method:'POST',
+          success:(res)=>{
+            console.log(res);
+          }
+        })
+      }
+    });
 
+    wx.getSetting({
+      success: (res) => {
+        if (res.authSetting['scope.userInfo']) {
+          this.setData({ canGetUserInfo: true });
+
+          //可以获得用户信息
+          wx.getUserInfo({
+            success: (res) => {
+              console.log(res.userInfo)
+                this.setData({
+                  nickName: res.userInfo.nickName,
+                  avatarUrl: res.userInfo.avatarUrl
+                })
+            }
+          })
+
+        }
+      }
+    })
+  },
+
+
+  pushAction(ev){
+    console.log(ev.currentTarget.dataset.push)
+    wx.navigateTo({
+      url: ev.currentTarget.dataset.push
+    })
   },
 
   /**

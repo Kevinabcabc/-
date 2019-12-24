@@ -1,0 +1,7 @@
+<!--components/boxson/boxson.wxml-->
+<view class="boxson">boxson
+
+<button bindtap="trggerAction">
+{{count}}</button>
+
+</view>

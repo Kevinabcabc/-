@@ -1,0 +1,65 @@
+/* pages/college/college-detail/college-detail.wxss */
+
+.college-detail .title{
+  text-align: center;
+  line-height: 90rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+
+}
+.college-detail .time{
+  text-align: center;
+  line-height: 30rpx;
+
+}
+
+.college-detail .image{
+  width: 700rpx;
+  height: 380rpx;
+  margin: 20rpx 25rpx;
+}
+
+.college-detail .content{
+  font-size: 30rpx;
+  padding: 0 20rpx;
+}
+
+
+
+.college-detail .nomore{
+    text-align: center;
+    line-height: 80rpx;
+  }
+
+
+    .college-detail .add-comment{
+      position: fixed;
+      bottom: 0;
+      height: 100rpx;
+      width: 110%;
+      left: -20rpx;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 60rpx;
+    }
+
+        .college-detail .add-comment input{
+          width: 500rpx;
+          border: 1rpx solid #ddd;
+          border-radius: 30rpx;
+          padding-left: 30rpx;
+        }
+        .college-detail .add-comment view{
+          width: 70rpx;
+          background: #d2ae8a;
+          font-weight: normal;
+          font-size: 30rpx;
+          color: white;
+          padding: 8rpx 40rpx;
+          text-align: center;
+          border-radius: 30rpx;
+          margin-right: 10rpx;
+        }

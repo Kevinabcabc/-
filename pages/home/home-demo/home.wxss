@@ -1,0 +1,192 @@
+/* pages/home/home/home.wxss */
+.banner-wrap{
+  position: relative;
+}
+.banner, .banner-img{
+  width: 750rpx;
+  height: 400rpx;
+}
+.indicator{
+  position: absolute;
+  left: 0;
+  bottom: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.indicator-item{
+  width: 34rpx;
+  height: 16rpx;
+  margin: 0 8rpx;
+  border-radius: 8rpx;
+  background: rgb(201, 201, 201);
+}
+.indicator-item.active{
+  width: 60rpx;
+  background: rgb(205, 175, 143);
+}
+
+
+/* 分类 */
+.category-wrap{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.category-item{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category-img{
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 14rpx;
+}
+
+/* 分栏头部 */
+.panel-header{
+  margin-top: 10rpx;
+  display: flex;
+  padding: 10rpx 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 16rpx solid #f1f1f1;
+}
+.panel-title{
+  border-left: 6rpx solid rgb(205, 175, 143);
+  padding-left: 10rpx;
+  font-size: 28rpx;
+}
+.more{
+  font-size: 28rpx;
+  color: #555;
+}
+
+/* 教师资讯 */
+.teacher-wrap{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.teacher-item{
+  width: 345rpx;
+  display: flex;
+  flex-direction: column;
+}
+.teacher-image{
+  margin-top: 10rpx;
+  width: 345rpx;
+  height: 200rpx;
+}
+.teacher-name{
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  text-align: center;
+}
+
+/* 学院资讯 */
+.infomation-item{
+  display: flex;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  height: 200rpx;
+}
+.info-image{
+  width: 200rpx;
+  height: 180rpx;
+}
+.info-content{
+  flex: 1;
+  margin-left: 14rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-title{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.info-desc{
+  font-size: 28rpx;
+  color: #555;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.info-time{
+  font-size: 26rpx;
+  font-style: initial;
+}
+
+/* 学院荣誉 */
+.honor-wrap{
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.honor-item{
+  width: 345rpx;
+  display: flex;
+  flex-direction: column;
+}
+.honor-image-wrap{
+  margin-top: 10rpx;
+  position: relative;
+}
+.honor-image{
+  width: 345rpx;
+  height: 200rpx;
+}
+.honor-info{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #fff;
+}
+.honor-name{
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  text-align: center;
+}
+
+/* 地图 */
+.map-wrap{
+  padding: 0 20rpx 20rpx;
+}
+.map{
+  width: 100%;
+  height: 400rpx;
+}
+.college-title{
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.college-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+.college-item-title{
+  font-weight: bold;
+}
+.college-item-value{
+  line-height: 60rpx;
+}

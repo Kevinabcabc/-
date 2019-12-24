@@ -1,2 +1,72 @@
 <!--pages/home/home/home.wxml-->
-<text>pages/home/home/home.wxml</text>
+<block wx:if="{{!isLoad}}">
+  <view wx:for="{{mockData}}" wx:key="index" 
+    style="width: {{item.width}}rpx; height: {{item.height}}rpx; background: #ddd; margin: 20rpx;"></view>
+</block>
+
+<block wx:else>
+    <!-- 轮播图 -->
+  <view class="banner-wrap">
+      <swiper class="banner" autoplay="{{true}}"  interval="{{3000}}"  circular="{{true}}"  bindchange="bannerChangeAction">
+        <swiper-item wx:for="{{banner}}" wx:key="index">
+        <image  class="banner-img"  src="{{item.bannerUrl}}"></image>
+        </swiper-item>
+      </swiper>
+
+      <view class="banner-dot">
+          <view class="{{'banner-dot-item' + (bannerIndex === index ? ' active' :'')}}" wx:for="{{banner}}" wx:key="index"></view>
+      </view>
+
+  </view>
+
+  <!-- 圆圈导航 -->
+
+  <view class="category">
+      <view class="category-item" wx:for="{{category}}" wx:key="index"  data-type="{{item.type}}" data-title="{{item.title}}"  bindtap="categoryAction">
+        <image class="category-img" src="{{item.picUrl}}"></image>
+        <view class="category-title">{{item.title}}</view>
+      </view>
+  </view>
+
+ 
+  <title-more title="教师风采" isMore="{{true}}" moreUrl="/pages/teachers/teachers-list/teacher-list"/>
+
+    <!-- 教师风采 -->
+
+    <view class="college">
+
+      <teacher-info wx:for="{{teachers}}" wx:key="index" imgurl="{{item.image}}" type="{{item.type}}" firstname="{{item.firstname}}" id="{{item.id}}"/>
+    </view>
+
+  <title-more title="学院资讯" isMore="{{true}}" moreUrl="/pages/college/college-list/college-list"/>
+<!-- 学院资讯 -->
+    <college-news wx:for="{{infomation}}" wx:key="index" desc="{{item.desc}}" image="{{item.image}}" time="{{item.time}}" title="{{item.title}}"/>
+
+  <title-more title="学院荣誉" isMore="{{true}}" moreUrl="/pages/college/honer-list/honer-list"/>
+  <view class="honor">
+    <honor-item wx:for="{{honor}}" wx:key="index" image="{{item.image}}" name="{{item.name}}" type="item.type" title="{{item.title}}"/>
+  </view>
+
+<title-more title="联系我们" isMore="{{false}}"/>
+<view class="callus">
+  <image src="/static/map.png"></image>
+  <view class="college-name">学院名称</view>
+  <view class="callus-com">
+    <text>地址：</text>
+    <text>{{connect.address}}</text>
+  </view>
+    <view class="callus-com">
+    <text>电话：</text>
+    <text>{{connect.phone[0].phone}}</text>
+  </view>
+    <view class="callus-com">
+    <text>手机：</text>
+    <text>{{connect.tel[0]}}</text>
+  </view>
+</view>
+
+
+
+</block>
+
+

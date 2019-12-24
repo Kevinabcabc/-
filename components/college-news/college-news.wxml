@@ -1,0 +1,9 @@
+<!--components/college-news/college-news.wxml-->
+<view class="college-news" bindtap="pushAction">
+  <image class="img" src="{{image}}"></image>
+  <view class="info">
+    <view class="title">{{title}}</view>
+    <view class="content">{{desc}}</view>
+    <text class="time">{{time}} </text>
+  </view>
+</view>

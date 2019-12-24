@@ -1,0 +1,6 @@
+<!--components/honor-item/honor-item.wxml-->
+<view class="honor-item" bindtap="pushAction">
+  <image class="img" src="{{image}}"></image>
+  <text class="grade">{{title}}</text>
+  <view class="name">{{name}} {{type===""?"":"（" + type+ "）"}}</view>
+</view>

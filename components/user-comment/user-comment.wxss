@@ -1,0 +1,21 @@
+/* components/user-comment/user-comment.wxss */
+.user-comment{
+  min-height: 290rpx;
+  padding: 20rpx;
+}
+
+.user-comment .content{
+  text-indent: 50rpx;
+}
+
+.user-comment .imgs image{
+  height: 150rpx;
+  width: 150rpx;
+  display: inline-block;
+  margin: 10rpx;
+}
+
+.user-comment .course{
+  display: flex;
+  justify-content: space-between;
+}

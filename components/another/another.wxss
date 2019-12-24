@@ -1,0 +1,6 @@
+/* components/another/another.wxss */
+.another{
+  height: 200rpx;
+  width: 100rpx;
+  background: dodgerblue;
+}

@@ -1,0 +1,31 @@
+<!--pages/user/coment/comment.wxml-->
+<view class="comment">
+  
+  <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>最新点评</text> 
+    </view>
+
+    <view  class="more" >
+      
+    </view>
+  
+  </view>
+
+  
+  <user-comment wx:for="{{newComment}}" wx:key="index"  info="{{item}}"/>
+
+
+  <view class="title-more">
+    <view class="title">
+      <view class="long"></view>
+      <text>历史点评</text> 
+    </view>
+    <view  class="more" >
+    </view>
+  </view>
+
+ <user-comment wx:for="{{allComment}}" wx:key="index"  info="{{item}}"/>
+
+</view>

@@ -1,0 +1,24 @@
+/* pages/user/order-list/order-list.wxss */
+
+.order-list{
+  height: 100%;
+  width: 100%;
+  padding-top: 90rpx;
+}
+
+.order-list .banner{
+  position: fixed;
+  top: 0;
+  left:0; 
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  height: 90rpx;
+  font-size: 35rpx;
+  align-items: center;
+}
+.order-list .banner .active{
+  color:rgb(205, 175, 143);
+  font-weight: bold;
+}

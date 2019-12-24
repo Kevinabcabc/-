@@ -1,0 +1,7 @@
+<!--pages/college/college-list/college-list.wxml-->
+<view class="college-list">
+
+  <college-news wx:for="{{infomation}}" wx:key="index" desc="{{item.desc}}" image="{{item.image}}" time="{{item.time}}" title="{{item.title}}" url="/pages/college/college-detail/college-detail"/>
+  <loadmore hasmore="{{hasMore}}"/>
+
+</view>

@@ -1,0 +1,20 @@
+<!--components/order-item/order-item.wxml-->
+<view class="order-item" bindtap="demoAction">
+
+  <view class="item">
+    <text>{{order.id}}</text>
+    <text>{{order.date}}</text>
+  </view>
+
+  <view class="item">
+    <text class="active">{{order.type}}</text>
+    <text>{{order.time}}</text>
+  </view>
+
+  <view class="item">
+    <text class="active">{{order.lesson}}</text>
+    <text>{{order.unpay}}</text>
+  </view>
+
+
+</view>

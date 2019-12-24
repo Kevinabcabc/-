@@ -1,0 +1,16 @@
+<!--pages/teachers/teachers-list/teacher-list.wxml-->
+<view class="teacher-list">
+  <view class="post">
+    <image src="/static/u152.png"></image>
+    <text>教授找不汇总撒旦发广东省未撒旦发撒旦发是是</text>
+  </view>
+
+  <view class="title">教师风采简介墙</view>
+
+  <view class="content">
+    <teacher-info wx:for="{{teachers}}" wx:key="index" imgurl="{{item.image}}" type="{{item.type}}" firstname="{{item.firstname}}" id="{{item.id}}"/>
+  </view>
+  <block wx:if="{{onlaod===true}}">
+  <view class="nomore">-----没有更多了-----</view>
+  </block>
+</view>

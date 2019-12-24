@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "教师风采",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "teacher-info": "/components/teacher-info/teacher-info"
+  }
+}

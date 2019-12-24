@@ -1,0 +1,56 @@
+<!--pages/teachers/teachers-detail/teacher-detail.wxml-->
+<view class="teacher-detail">
+
+  <view class="teacher-header">
+    <view class="left">
+      <image src="{{info.logo}}"></image>
+      <view class="left-info">
+        <view class="name">{{info.name}}</view>
+        <view class="type">授课科目：{{info.type}}</view>
+      </view>
+    </view>
+
+    <view class="right">
+      学生人数：{{info.studentNum}}
+    </view>
+
+  </view>
+
+
+  <image class="img" src="{{img}}"></image>
+
+  <view class="content">
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+    {{content}}
+  </view>
+
+  <gold-title title="教师荣誉"/>
+
+  <view class="teacher-honor">
+    <honor-item wx:for="{{honor}}" wx:key="index" image="{{item.img}}" name="{{item.time}}" type="" title="{{item.name}}"/>
+  </view>
+
+  <gold-title title="课程列表"/>
+  <view class="course-list">
+    <course-item wx:for="{{courseList}}" img="{{item.img}}" wx:key="index" type="{{item.type}}" content="{{item.info}}" time="{{item.time}}" title="{{item.name}}"/>
+  </view>
+
+  <title-more title="学生评价" isMore="{{false}}"/>
+
+  <view class="comments">
+
+
+  
+    <comment wx:for="{{comment}}" wx:key="index" content="{{item.content}}" img="{{item.img}}" time="{{item.time}}"/>
+    <view class="nomore">----没有更多了----</view>
+  </view>
+
+
+  <view class="add-comment">
+    <input placeholder="留个言，上个墙" bindblur="blurAction"></input>
+    <view bindtap="sendAction">发送</view>
+  </view>
+</view>

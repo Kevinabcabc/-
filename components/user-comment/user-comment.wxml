@@ -1,0 +1,15 @@
+<!--components/user-comment/user-comment.wxml-->
+<view class="user-comment" bindtap="demoAction">
+    <view class="content">
+      {{info.content}}
+    </view>
+    
+    <view class="imgs">
+      <image wx:for="{{info.imgs}}" wx:key="index" src="{{item}}"></image>
+    </view>
+
+    <view class="course">
+      <text>课程：{{info.type}}</text>
+      <text>{{info.date}}</text>
+    </view>
+</view>

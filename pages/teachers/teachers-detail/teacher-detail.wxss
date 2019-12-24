@@ -1,0 +1,88 @@
+/* pages/teachers/teachers-detail/teacher-detail.wxss */
+.teacher-detail{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  }
+
+  /*      .teacher-detail .       */
+
+ .teacher-detail  .teacher-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+  .teacher-detail  .teacher-header .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .teacher-detail  .teacher-header .left image{
+    height: 120rpx;
+    width: 120rpx;
+    margin-right: 20rpx;
+  } 
+
+   .teacher-detail  .teacher-header .left .left-info .name{
+     font-weight: bold;
+     font-size: 30rpx;
+     line-height: 50rpx;
+   }
+
+   .teacher-detail .img{
+     width: 100%;
+     height: 400rpx;
+     margin-top: 20rpx;
+   }
+  /*      .teacher-detail .       */
+   .teacher-detail .content{
+     font-size: 30rpx;
+   }
+
+  .teacher-detail .teacher-honor{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+
+
+  .teacher-detail .nomore{
+    text-align: center;
+    line-height: 80rpx;
+  }
+
+
+    .teacher-detail .add-comment{
+      position: fixed;
+      bottom: 0;
+      height: 100rpx;
+      width: 110%;
+      left: -20rpx;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 60rpx;
+    }
+
+        .teacher-detail .add-comment input{
+          width: 500rpx;
+          border: 1rpx solid #ddd;
+          border-radius: 30rpx;
+          padding-left: 30rpx;
+        }
+        .teacher-detail .add-comment view{
+          width: 70rpx;
+          background: #d2ae8a;
+          font-weight: normal;
+          font-size: 30rpx;
+          color: white;
+          padding: 8rpx 40rpx;
+          text-align: center;
+          border-radius: 30rpx;
+          margin-right: 10rpx;
+        }

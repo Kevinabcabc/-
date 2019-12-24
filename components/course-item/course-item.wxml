@@ -1,0 +1,12 @@
+<view class="course-item">
+  <view class="left">
+    <image src="{{img}}"></image>
+    <text class="type">{{type}}</text>
+  </view>
+  <view class="right">
+    <view class="title">{{title}}</view>
+    <view class="content">{{content}}</view>
+    <view class="time"> 授课权限：{{time}} </view>
+    <view bindtap="pushAction" class="signUp">{{purchased===true?'查看':'报名'}}</view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+/* components/honor-item/honor-item.wxss */
+.honor-item{
+  height: 250rpx;
+  width: 350rpx;
+  position: relative;
+}
+.honor-item .img{
+  height: 200rpx;
+  width: 350rpx;
+}
+.honor-item .grade{
+  position: absolute;
+  bottom: 60rpx;
+  left: 10rpx;
+  color: white;
+}
+.honor-item .name{
+  text-align: center;
+  line-height: 50rpx;
+}
